@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="这个是我的接口测试套件">
+    <test name="这些是测试模块">
+        <classes>
+            <class name="com.tester.extend.demo.TestMethodDemo">
+
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="logDemo"/>
+
+                </methods>
+
+            </class>
+
+        </classes>
+    </test>
+    <!--测试报告是监听整个执行过程中收集数据。所以这里需要添加这个监听器。-->
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+    </listeners>
+
+
+</suite>
