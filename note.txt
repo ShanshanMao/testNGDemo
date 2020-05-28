@@ -147,6 +147,7 @@ post里面的参数用"forms"
 
 4、moco框架中如何加入cookies
 
+5、moco框架中如何加入header
 
 
 
