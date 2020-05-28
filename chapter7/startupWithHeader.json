@@ -7,7 +7,7 @@
       "headers":{
         "content-type":"application/json"
       },
-      "queries": {
+      "json": {
         "name": "elva",
         "sex": "woman"
       }

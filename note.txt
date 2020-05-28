@@ -149,10 +149,50 @@ post里面的参数用"forms"
 
 5、moco框架中如何加入header
 
+6、moco框架中如何进行重定向
+------------------------------------------------------------------
+
+四 http协议接口
+
+1、在浏览器中查看http协议信息头
+2、请求头字段含义
+    Accept：表示 浏览器告诉服务器它所支持的数据类型
+    Accept-Charset：浏览器告诉服务器它采用的字符集
+    Accept-Encoding：浏览器告诉服务器它所支持的压缩格式
+    Accept-Language：浏览器告诉服务器它采用的语言
+    Host：浏览器告诉服务器，浏览器想访问服务器哪台主机
+    if-Modified-Since：浏览器告诉服务器它缓存数据时间是多少
+    referer：浏览器告诉服务器，浏览器是从哪个网页点过来的（防盗链）
+    user—Agent：浏览器告诉服务器，浏览器所使用的浏览器类型、版本等信息
+    Data：浏览器告诉服务器，浏览器什么时间访问的
+
+3、响应头信息字段含义
+    location：这个告诉浏览器去找谁，配合302状态码使用。（302转发）
+    server：告诉浏览器服务器的类型
+    content-encoding：告诉浏览器回送的数据采用的压缩格式
+    content-type：告诉浏览器回送的数据类型
+    last-modified：告诉浏览器数据的最后修改时间
+    refresh：用于控制浏览器定时刷新
+    content-disposition：告诉浏览器需要以下载方式打开回送的数据
+    transfer-encoding：告诉浏览器数据是以分块形式回送的
+
+4、cookie和session的区别
+    cookie在客户端的头信息中。
+    session在服务端存储，文件、数据库等都可以。
+    一般来说session的验证需要cookie带一个字段来表示这个用户是哪一个session。
+    session的验证需要cookie带一个字段来表示这个用户是哪一个session，所以当客户端禁用cookie时，session将失效。
+cookie总结：cookie的信息是自定义的。就是一小段文本信息。cookie的值由服务端生产，客户端保存。
+cookie格式：key:value; key:value
+
+---------------------------------------------------------------
+
+五、httpClient测试框架
+1、mock一个返回cookies信息的请求
 
 
+--------------------------------------------
 
-
+六、接口开发SpringBoot
 
 
 
