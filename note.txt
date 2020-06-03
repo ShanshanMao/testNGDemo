@@ -20,7 +20,7 @@
 
 5 testNG套件测试
 
-6 testNG忽略测试（本次测试执行之前不想执行的测试）
+6 testNG忽略测试（本次测试执行之前不想执行的测试）(enabled)
     @Test(enabled = false) 将不执行该条测试。
 
 7 组（group）测试中的方法分组测试（testNG组测试）
@@ -56,6 +56,7 @@
         }
 
 12 参数化测试-DataProvider参数化
+@DataProvider
 
 13 多线程测试-注解方式实现（多个线程执行一个方法）
     MultiThreadOnAnnotion
@@ -190,14 +191,41 @@ cookie格式：key:value; key:value
 1、mock一个返回cookies信息的请求
 
 
---------------------------------------------
+-------------------------------------------------------------
 
 六、接口开发SpringBoot
 
+1、springBoot介绍与官方demo
+使用Springboot的官网demo进行练习
+我们添加的hello()方法被设计成接受一个名为name的字符串参数，然后将该参数与代码中的单词“hello”组合起来。
+这意味着如果您在请求中将您的名字设置为“Amy”，那么响应将是“Hello Amy”。
 
+@RestController注释告诉Spring，这段代码描述了一个应该在web上可用的端点。
+@GetMapping(" /hello ")告诉Spring使用我们的hello()方法来响应发送到http://localhost:8080/hello地址的请求。
+@RequestParam告诉Spring在请求中期望有一个name值，但是如果没有，它将默认使用“World”这个词。
 
+2、返回cookies信息的get接口开发
 
+MyGetMethod
 
+3、要求携带cookies信息访问的get接口开发
 
+使用jmeter查看访问结果，需要创建http请求和httpcookies请求
 
+4、需求携带参数的get请求两种开发方式
+第一种实现方式 url: key=value&key=value
+第二种： url: ip:port/get/with/param/10/20
+
+使用浏览器打开访问结果 http://localhost:8877/get/with/param/10/20
+
+5、SpringBoot集成swaggerUI
+swaggerUI就是一个自动生成接口文档的插件
+访问的时候直接使用 http://localhost:8877/swagger-ui.html
+
+6、返回cookies信息的post接口开发
+
+7、I-cookies验证和返回用户列表的post接口开发以及常见错误
+在idea里面搜索一个插件：Lombok
+创建了一个bean包，再在post method里面写
+应用Lombok这个插件可以帮助我们使用@Getter and @Setter
 

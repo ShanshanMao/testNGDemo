@@ -34,6 +34,7 @@ public class groupsOnMethod {
     public void afterGroupsOnServer(){
         System.out.println("这是服务端组运行之后运行的方法！");
     }
+
     @BeforeGroups("client")
     public void beforeGroupsOnClient(){
         System.out.println("这是客户端组运行之前运行的方法！");
