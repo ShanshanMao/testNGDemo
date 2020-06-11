@@ -229,3 +229,71 @@ swaggerUI就是一个自动生成接口文档的插件
 创建了一个bean包，再在post method里面写
 应用Lombok这个插件可以帮助我们使用@Getter and @Setter
 
+------------------------------------------------------------------
+
+七、数据持久层框架MyBatis的应用
+MyBatis是连接数据库使用最频繁的一个框架。
+
+1、mybatis和logback的应用配置
+
+首先在pom文件加入依赖
+<dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.38</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+    </dependencies>
+这样就可以将mybatis和sql以及Springboot进行应用。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

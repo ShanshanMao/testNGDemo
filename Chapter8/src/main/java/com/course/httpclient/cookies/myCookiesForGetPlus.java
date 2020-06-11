@@ -36,9 +36,6 @@ public class myCookiesForGetPlus {
         String testUrl = this.url+uri;
         //测试逻辑代码
         HttpGet get = new HttpGet(testUrl);
-
-        //HttpClient client = new DefaultHttpClient();
-        //获取cookies的例子，置灰上一条语句
         DefaultHttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
 
@@ -69,12 +66,10 @@ public class myCookiesForGetPlus {
 
         //设置cookies信息
         client.setCookieStore(this.store);
-
         HttpResponse response = client.execute(get);
 
-        //获取响应的状态吗
+        //获取响应的状态码
         int statusCode = response.getStatusLine().getStatusCode();
-
         System.out.println("statusCode = "+statusCode);
 
         if(statusCode == 200){

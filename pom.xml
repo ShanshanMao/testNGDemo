@@ -14,10 +14,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Chapter5</module>
-        <module>Chapter6</module>
+        <module>TestNG</module>
+        <module>TestReport</module>
         <module>Chapter8</module>
         <module>Chapter9</module>
+        <module>MybatisAndLogback</module>
     </modules>
 
 

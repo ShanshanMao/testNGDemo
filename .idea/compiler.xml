@@ -2,23 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter5" />
-        <module name="Chapter6" />
         <module name="Chapter8" />
         <module name="Chapter9" />
+        <module name="MybatisAndLogback" />
+        <module name="TestNG" />
+        <module name="TestReport" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Chapter5" options="-parameters" />
-      <module name="Chapter6" options="-parameters" />
       <module name="Chapter8" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
+      <module name="MybatisAndLogback" options="-parameters" />
+      <module name="TestNG" options="-parameters" />
+      <module name="TestReport" options="-parameters" />
     </option>
   </component>
 </project>

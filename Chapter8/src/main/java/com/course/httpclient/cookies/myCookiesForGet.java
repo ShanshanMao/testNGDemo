@@ -33,14 +33,11 @@ public class myCookiesForGet {
         //从配置文件中 拼接测试的URL
         String uri = bundle.getString("getCookies.uri");
         String testUrl = this.url+uri;
+
         //测试逻辑代码
         HttpGet get = new HttpGet(testUrl);
-
-        //HttpClient client = new DefaultHttpClient();
-        //获取cookies的例子，置灰上一条语句
         DefaultHttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
-
         result = EntityUtils.toString(response.getEntity(),"utf-8");
 
         System.out.println(result);
